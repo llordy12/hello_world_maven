@@ -1,6 +1,5 @@
 package com.generation.helloworld.controller;
 
-
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,20 +16,29 @@ public class HelloWorldController {
 		return "Hello World!!!";
 	}
 	
-	 @GetMapping("/bsm")
-	    public List<String> listBsm() {
-	        return List.of(
-	                "Proatividade",
-	                "Orientação ao Futuro",
-	                "Trabalho em Equipe",
-	                "Responsabilidade Pessoal",
-	                "Comunicação",
-	                "Mentalidade de Crescimento",
-	                "Persistencia",
-	                "Atenção aos Detalhes"
-	        );
-	    }
-	 
 
+    @GetMapping("/bsm")
+    public List<String> listBsm() {
+        return List.of(
+                "Proatividade",
+                "Orientação ao Futuro",
+                "Trabalho em Equipe",
+                "Responsabilidade Pessoal",
+                "Comunicação",
+                "Mentalidade de Crescimento",
+                "Persistencia",
+                "Atenção aos Detalhes"
+        );
+    }
+
+
+    @GetMapping("/objetivos")
+    public List<String> listObjetivos() {
+        return List.of(
+                "Aprender conceitos de maven e spring",
+                "praticar muito sobre controllers e endpoints",
+                "começar meu blog pessoal"
+        );
+    }
  
 }
